@@ -13,16 +13,22 @@ class Specialty(models.Model):
 class Course(models.Model):
     name = models.CharField(max_length=100)
 
+    def __str__(self):
+        return self.name
+
 
 class Doctor(models.Model):
     name = models.CharField(max_length=100)
 
+    def __str__(self):
+        return self.name
+
 
 class Material(models.Model):
     type_options = (
-        ("LuctuerNotes", "LuctuerNotes"),
+        ("LectureNotes", "LectureNotes"),
         ("Exam form", "Exam form"),
-        ("Worcksheet", "Worcksheet"),
+        ("Worksheet", "Worksheet"),
         ("Book", "Book"),
         ("Syllabus", "Syllabus")
     )
@@ -33,6 +39,7 @@ class Material(models.Model):
     )
     title = models.CharField(max_length=255)
     course = models.ForeignKey(Course, on_delete=models.SET_NULL, null=True)
+    doctor = models.ForeignKey(Doctor, on_delete=models.SET_NULL, null=True)
     material_type = models.CharField(max_length=60, choices=type_options)
     year = models.PositiveIntegerField(default=current_year)
     semester = models.CharField(choices=semesters, max_length=20)

@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="994a4074-ded5-4193-a49f-41ec568512af" name="Default Changelist" comment="" />
+    <list default="true" id="994a4074-ded5-4193-a49f-41ec568512af" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/materialsearch/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/materialsearch/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/materialsearch/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/materialsearch/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/materialsearch/migrations/0002_auto_20200607_2338.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/materialsearch/migrations/0003_material_semester.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/materialsearch/migrations/0004_auto_20200607_2352.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/materialsearch/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/materialsearch/models.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +25,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1czWxKSVTiv8EKdWHz7JUyJENAn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -24,15 +38,16 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="C:/vidly_project-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -57,6 +72,7 @@
       <workItem from="1591533682912" duration="4520000" />
       <workItem from="1591553814791" duration="1875000" />
       <workItem from="1591567041915" duration="26000" />
+      <workItem from="1591577767534" duration="234000" />
     </task>
     <servers />
   </component>
@@ -68,13 +84,13 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1591567065329" />
-    <state x="184" y="7" key="SettingsEditor" timestamp="1591555259867">
+    <state x="184" y="7" key="SettingsEditor" timestamp="1591578000760">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="7" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1591555259867" />
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1591567043239">
+    <state x="184" y="7" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1591578000760" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1591577767497">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1591567043239" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1591577767497" />
   </component>
 </project>
