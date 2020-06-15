@@ -2,20 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="994a4074-ded5-4193-a49f-41ec568512af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/materialsearch/migrations/0002_auto_20200608_1505.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/materialsearch/migrations/0003_auto_20200608_1518.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/materialsearch/migrations/0004_auto_20200610_0036.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/materialsearch/migrations/0005_auto_20200610_0050.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Jonuon.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Jonuon.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jonuon/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/jonuon/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/materialsearch/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/materialsearch/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/materialsearch/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/materialsearch/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/materialsearch/migrations/0002_auto_20200607_2338.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/materialsearch/migrations/0003_material_semester.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/materialsearch/migrations/0004_auto_20200607_2352.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/materialsearch/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/materialsearch/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/materialsearch/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/materialsearch/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bass.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bass.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" module-name="Jonuon" is-module-sdk="true">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+    <option name="myUseModuleSdk" value="true" />
+    <option name="myModuleName" value="Jonuon" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -36,6 +47,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -50,12 +62,41 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\programing\Jonuon\genius" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\programing\Jonuon\jonuon\static" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\programing\Jonuon\genius" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="tests" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Jonuon" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/courses" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/courses/tests.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.tests" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -73,6 +114,16 @@
       <workItem from="1591553814791" duration="1875000" />
       <workItem from="1591567041915" duration="26000" />
       <workItem from="1591577767534" duration="234000" />
+      <workItem from="1591736574342" duration="4546000" />
+      <workItem from="1591804976527" duration="5398000" />
+      <workItem from="1591820915985" duration="24000" />
+      <workItem from="1591971022951" duration="2397000" />
+      <workItem from="1591979265736" duration="1412000" />
+      <workItem from="1591987552109" duration="11000" />
+      <workItem from="1591989914038" duration="5896000" />
+      <workItem from="1592000715206" duration="9077000" />
+      <workItem from="1592162841269" duration="7521000" />
+      <workItem from="1592232665163" duration="1232000" />
     </task>
     <servers />
   </component>
@@ -80,17 +131,44 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1591567065329">
+    <state x="275" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591971093743">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1591567065329" />
-    <state x="184" y="7" key="SettingsEditor" timestamp="1591578000760">
+    <state x="275" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1591971093743" />
+    <state x="363" y="101" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1592162912895">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="7" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1591578000760" />
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1591577767497">
+    <state x="363" y="101" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1592162912895" />
+    <state x="767" y="87" key="FileChooserDialogImpl" timestamp="1591974087403">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1591577767497" />
+    <state x="767" y="87" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1591974087403" />
+    <state width="1323" height="188" key="GridCell.Tab.0.bottom" timestamp="1592172881524">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="188" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592172881524" />
+    <state width="1323" height="188" key="GridCell.Tab.0.center" timestamp="1592172881524">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="188" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592172881524" />
+    <state width="1323" height="188" key="GridCell.Tab.0.left" timestamp="1592172881524">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="188" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592172881524" />
+    <state width="1323" height="188" key="GridCell.Tab.0.right" timestamp="1592172881524">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="188" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592172881524" />
+    <state x="219" y="15" key="SettingsEditor" timestamp="1591808723054">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="219" y="15" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1591808723054" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1592237329479">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1592237329479" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Jonuon$tests.coverage" NAME="tests Coverage Results" MODIFIED="1592170868477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses" />
   </component>
 </project>
