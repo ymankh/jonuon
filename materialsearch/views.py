@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.core.paginator import Paginator
+from time import asctime
 
 from .models import Material, Specialty, Doctor, Course, University
 
@@ -10,7 +11,9 @@ def passing_arguments(materials):
         "doctor_choices": Doctor.objects.all(),
         "coerce_choices": Course.objects.all(),
         "specialty_choices": Specialty.objects.all(),
-        "universities": University.objects.all()
+        "universities": University.objects.all(),
+        'years': [a for a in range(2000, int(asctime()[-4:]) + 1)],
+        "semesters": ("first semester", "second semester", "summer semester")
     }
 
 
@@ -38,11 +41,14 @@ def material_search_result(request):
     if "coerce" in request.GET:
         materials = materials.filter(course=request.GET["coerce"])
     if "specialty" in request.GET:
-        materials = materials.filter(course=request.GET["specialty"])
+        materials = materials.filter(specialty=request.GET["specialty"])
     if "University" in request.GET:
-        materials = materials.filter(course=request.GET["University"])
-    # if "specialty" in request.GET:
-    #     materials = materials.filter(course=request.GET["specialty"])
+        materials = materials.filter(university=request.GET["University"])
+    if "year" in request.GET:
+        materials = materials.filter(year=request.GET["year"])
+    if "semester" in request.GET:
+        materials = materials.filter(semester=request.GET["semester"])
+
     materials = materials.order_by('-id')
     materials = paginate(request, materials, 12)
     passed_arguments = passing_arguments(materials)
