@@ -1,0 +1,194 @@
+{% extends 'bass.html' %} {% load static %}
+{% block title %}
+    Materials
+{% endblock %}
+{% block "content" %}
+    <div
+            class="hero-wrap hero-wrap-2"
+            style="
+                    background-image: url('{% static 'img/627.jpg' %}');
+                    background-attachment: fixed;
+                    "
+    >
+        <div class="overlay"></div>
+        <div class="container">
+            <div
+                    class="row no-gutters slider-text align-items-center justify-content-center"
+                    data-scrollax-parent="true"
+            >
+                <div class="col-md-8 ftco-animate text-center">
+                    <p class="breadcrumbs">
+
+                        <section id="showcase-inner" class="showcase-search text-white py-5">
+                            <div class="container">
+                                <div class="row text-center ">
+                                    <div class="col-md-12">
+                                        <form action="{% url 'material_search_result' %}">
+                                            <!-- Form Row 1 -->
+                                            <div class="form-row">
+                                                <div class="col-md-6 mb-3">
+                                                    <label class="sr-only">Keywords</label>
+                                                    <input type="text" name="keywords" class="form-control rounded"
+                                                           placeholder="Keyword">
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label class="sr-only">Doctor</label>
+                                                    <select name="Doctor" class="form-control rounded">
+                                                        <option selected="true" disabled="disabled">Doctor</option>
+                                                        {% for doctor_choice in doctor_choices %}
+                                                            <option value="{{ doctor_choice.id }}">{{ doctor_choice }}</option>
+                                                        {% endfor %}
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <!-- Form Row 2 -->
+                                            <div class="form-row">
+                                                <div class="col-md-6 mb-3">
+                                                    <label class="sr-only">Bedrooms</label>
+                                                    <select name="coerce" class="form-control rounded">
+                                                        <option selected="true" disabled="disabled">Coerce</option>
+                                                        {% for coerce_choice in coerce_choices %}
+                                                            <option value="{{ coerce_choice.id }}">{{ coerce_choice }}</option>
+                                                        {% endfor %}
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label class="sr-only">Bedrooms</label>
+                                                    <select name="specialty" class="form-control rounded">
+                                                        <option selected="true" disabled="disabled">specialty</option>
+                                                        {% for specialty_choice in specialty_choices %}
+                                                            <option value="{{ specialty_choice.id }}">{{ specialty_choice }}</option>
+                                                        {% endfor %}
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label class="sr-only">university</label>
+                                                    <select name="University" class="form-control rounded">
+                                                        <option selected="true" disabled="disabled">university</option>
+                                                        {% for university in universities %}
+                                                            <option value="{{ university.id }}">{{ university }}</option>
+                                                        {% endfor %}
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <select name="price" class="form-control rounded">
+                                                        <option selected="true" disabled="disabled">Max Price (All)
+                                                        </option>
+                                                        <option value="100000">$100,000</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-info btn-block mt-4" type="submit">Search
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </p>
+                    <h1 class="mb-3 bread">Materials</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row">
+                {% for material in materials %}
+
+                    <div class="col-md-4 d-flex ftco-animate">
+                        <div class="course align-self-stretch">
+                            <a
+                                    href="{{ material.link }}"
+                                    class="img"
+                                    style="background-image: url({{ material.image.url }});"
+                            ></a>
+                            <div class="text p-4">
+                                <h3 class="mb-3"><a href="{{ material.link }}">{{ material.title }}</a></h3>
+                                <table class="table table-hover">
+                                    <tbody>
+                                    <tr>
+                                        <td><i class="fas fa-chalkboard-teacher mr-2"></i>{{ material.doctor }}</td>
+                                        <td><i class="fas fa-book  mr-2"></i>{{ material.course }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fas fa-calendar-alt  mr-2"></i> {{ material.semester }} {{ material.year }}
+                                        </td>
+                                        <td><i class="fas fa-book-reader  mr-2"></i> {{ material.material_type }}</td>
+                                    </tr>
+                                    <tr><span class="ultm ultm-uniEB0D"></span>
+                                        <td><i class="fas fa-graduation-cap mr-2"></i>{{ material.specialty }}</td>
+                                        <td><i class="fas fa-school mr-2"></i>{{ material.university }}</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <p><a href="{{ material.link }}" class="btn btn-primary">Download</a></p>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+
+            {% if materials.has_other_pages %}
+                <div class="row mt-5">
+                    <div class="col text-center">
+                        <div class="block-27">
+                            <ul>
+                                {% if materials.has_previous %}
+                                    <li><a href="?page={{ materials.previous_page_number }}">&lt;</a></li>{% endif %}
+                                {% for i in materials.paginator.page_range %}
+                                    {% if materials.number == i %}
+                                        <li class="active"><span>{{ i }}</span></li>
+                                    {% else %}
+                                        <li><a href="?page={{ i }}">{{ i }}</a></li>
+                                    {% endif %}
+                                {% endfor %}
+                                {% if materials.has_next %}
+                                    <li><a href="?page={{ materials.next_page_number }}">&gt;</a></li>
+                                {% endif %}
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            {% endif %}
+        </div>
+
+    </section>
+
+
+    {#    <section class="ftco-section-parallax">#}
+    {#        <div class="parallax-img d-flex align-items-center">#}
+    {#            <div class="container">#}
+    {#                <div class="row d-flex justify-content-center">#}
+    {#                    <div#}
+    {#                            class="col-md-7 text-center heading-section heading-section-white ftco-animate"#}
+    {#                    >#}
+    {#                        <h2>Subcribe to our Newsletter</h2>#}
+    {#                        <p>#}
+    {#                            Far far away, behind the word mountains, far from the countries#}
+    {#                            Vokalia and Consonantia, there live the blind texts. Separated they#}
+    {#                            live in#}
+    {#                        </p>#}
+    {#                        <div class="row d-flex justify-content-center mt-5">#}
+    {#                            <div class="col-md-8">#}
+    {#                                <form action="#" class="subscribe-form">#}
+    {#                                    <div class="form-group d-flex">#}
+    {#                                        <input#}
+    {#                                                type="text"#}
+    {#                                                class="form-control"#}
+    {#                                                placeholder="Enter email address"#}
+    {#                                        />#}
+    {#                                        <input type="submit" value="Subscribe" class="submit px-3"/>#}
+    {#                                    </div>#}
+    {#                                </form>#}
+    {#                            </div>#}
+    {#                        </div>#}
+    {#                    </div>#}
+    {#                </div>#}
+    {#            </div>#}
+    {#        </div>#}
+    {#    </section>#}
+{% endblock %}
