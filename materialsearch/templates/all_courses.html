@@ -4,7 +4,7 @@
 {% endblock %}
 {% block "content" %}
     <div
-            class="hero-wrap hero-wrap-2"
+            class="hero-wrap "
             style="
                     background-image: url('{% static 'img/627.jpg' %}');
                     background-attachment: fixed;
@@ -23,6 +23,7 @@
                             <div class="container">
                                 <div class="row text-center ">
                                     <div class="col-md-12">
+                                    <h1 class="mb-3 bread text-center">Materials</h1>
                                         <form action="{% url 'material_search_result' %}">
                                             <!-- Form Row 1 -->
                                             <div class="form-row">
@@ -76,15 +77,15 @@
                                                         {% endfor %}
                                                     </select>
                                                 </div>
-                                            <div class="col-md-6 mb-3">
-                                                <select name="semester" class="form-control rounded">
-                                                    <option selected="true" disabled="disabled">Semester
-                                                    </option>
-                                                    {% for semester in semesters %}
-                                                        <option value="{{ semester }}">{{ semester }}</option>
-                                                    {% endfor %}
-                                                </select>
-                                            </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <select name="semester" class="form-control rounded">
+                                                        <option selected="true" disabled="disabled">Semester
+                                                        </option>
+                                                        {% for semester in semesters %}
+                                                            <option value="{{ semester }}">{{ semester }}</option>
+                                                        {% endfor %}
+                                                    </select>
+                                                </div>
                                             </div>
                                             <button class="btn btn-info btn-block mt-4" type="submit">Search
                                             </button>
@@ -93,9 +94,7 @@
                                 </div>
                             </div>
                         </section>
-
                     </p>
-                    <h1 class="mb-3 bread">Materials</h1>
                 </div>
             </div>
         </div>

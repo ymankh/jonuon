@@ -48,7 +48,6 @@ def material_search_result(request):
         materials = materials.filter(year=request.GET["year"])
     if "semester" in request.GET:
         materials = materials.filter(semester=request.GET["semester"])
-
     materials = materials.order_by('-id')
     materials = paginate(request, materials, 12)
     passed_arguments = passing_arguments(materials)
