@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="994a4074-ded5-4193-a49f-41ec568512af" name="Default Changelist" comment="">
+    <list default="true" id="994a4074-ded5-4193-a49f-41ec568512af" name="Default Changelist" comment="fix the search button">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homepage/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homepage/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profile_page/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Jonuon.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Jonuon.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homepage/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/homepage/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jonuon/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/jonuon/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jonuon/static/img/627.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/jonuon/static/img/627.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jonuon/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/jonuon/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/materialsearch/templates/all_courses.html" beforeDir="false" afterPath="$PROJECT_DIR$/materialsearch/templates/all_courses.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/materialsearch/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/materialsearch/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/627.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/627.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/materialsearch/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/materialsearch/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/2_627.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/teachers/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/teachers/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/_nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_nav.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/bass.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bass.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,9 +29,6 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
     <option name="myUseModuleSdk" value="true" />
     <option name="myModuleName" value="Jonuon" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="Jonuon" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -33,10 +42,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1czWxKSVTiv8EKdWHz7JUyJENAn" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -52,14 +62,16 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="G:\programing\Jonuon\jonuon\static" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="G:\programing\Jonuon\genius" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\programing\Jonuon\profile_page\templates" />
+      <recent name="G:\programing\Jonuon\jonuon\static" />
     </key>
   </component>
   <component name="RunManager">
@@ -121,7 +133,12 @@
       <workItem from="1592255019787" duration="574000" />
       <workItem from="1592313460513" duration="184000" />
       <workItem from="1592391751099" duration="203000" />
-      <workItem from="1592392194248" duration="3041000" />
+      <workItem from="1592392194248" duration="4491000" />
+      <workItem from="1592516175412" duration="55000" />
+      <workItem from="1592832545531" duration="2313000" />
+      <workItem from="1592849826043" duration="1894000" />
+      <workItem from="1592854208921" duration="629000" />
+      <workItem from="1592909621323" duration="4419000" />
     </task>
     <task id="LOCAL-00001" summary="v0.5">
       <created>1592237365570</created>
@@ -144,16 +161,31 @@
       <option name="project" value="LOCAL" />
       <updated>1592255062978</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix the search button">
+      <created>1592395688907</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1592395688907</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fix the search button">
+      <created>1592395702244</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1592395702244</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="v0.5" />
     <MESSAGE value="material search done" />
-    <option name="LAST_COMMIT_MESSAGE" value="material search done" />
+    <MESSAGE value="fix the search button" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix the search button" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591971093743">
@@ -164,30 +196,30 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="363" y="101" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1592391763084" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1592255059545">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1592833389928">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1592255059545" />
-    <state x="767" y="87" key="FileChooserDialogImpl" timestamp="1591974087403">
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1592833389928" />
+    <state x="767" y="87" key="FileChooserDialogImpl" timestamp="1592516227615">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="767" y="87" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1591974087403" />
-    <state width="1323" height="188" key="GridCell.Tab.0.bottom" timestamp="1592172881524">
+    <state x="767" y="87" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1592516227615" />
+    <state width="1323" height="188" key="GridCell.Tab.0.bottom" timestamp="1592911398359">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="188" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592172881524" />
-    <state width="1323" height="188" key="GridCell.Tab.0.center" timestamp="1592172881524">
+    <state width="1323" height="188" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592911398359" />
+    <state width="1323" height="188" key="GridCell.Tab.0.center" timestamp="1592911398358">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="188" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592172881524" />
-    <state width="1323" height="188" key="GridCell.Tab.0.left" timestamp="1592172881524">
+    <state width="1323" height="188" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592911398358" />
+    <state width="1323" height="188" key="GridCell.Tab.0.left" timestamp="1592911398358">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="188" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592172881524" />
-    <state width="1323" height="188" key="GridCell.Tab.0.right" timestamp="1592172881524">
+    <state width="1323" height="188" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592911398358" />
+    <state width="1323" height="188" key="GridCell.Tab.0.right" timestamp="1592911398359">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="188" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592172881524" />
+    <state width="1323" height="188" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592911398359" />
     <state x="219" y="15" key="SettingsEditor" timestamp="1591808723054">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -200,12 +232,16 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="438" y="209" key="cloudConfig.SelfSettingsDialog/0.0.1366.728@0.0.1366.728" timestamp="1592255318785" />
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1592392292414">
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1592516177640">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1592392292414" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1592516177640" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1592850191626">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1592850191626" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Jonuon$tests.coverage" NAME="tests Coverage Results" MODIFIED="1592170868477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses" />
+    <SUITE FILE_PATH="coverage/Jonuon$tests.coverage" NAME="tests Coverage Results" MODIFIED="1592911162912" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses" />
   </component>
 </project>

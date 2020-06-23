@@ -13,7 +13,9 @@
     </facet>
   </component>
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/node_modules" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
@@ -24,6 +26,8 @@
         <option value="$MODULE_DIR$/templates" />
         <option value="$MODULE_DIR$/jonuon/templates" />
         <option value="$MODULE_DIR$/materialsearch/templates" />
+        <option value="$MODULE_DIR$/homepage/templates" />
+        <option value="$MODULE_DIR$/profile_page/templates" />
       </list>
     </option>
   </component>

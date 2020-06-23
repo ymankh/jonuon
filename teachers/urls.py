@@ -3,5 +3,5 @@ from .views import teachers
 
 
 urlpatterns = [
-    path("", teachers)
+    path("", teachers, name='teachers')
 ]
