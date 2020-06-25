@@ -1,0 +1,49 @@
+{% extends 'bass.html' %}
+{% block title %}
+    Signup
+{% endblock %}
+{% block content %}
+
+    <div class="container">
+    {% include 'partials/_alerts.html' %}
+        <div class="row">
+            <form class="col-lg-6 col-12" method="post">
+                {% csrf_token %}
+                <h2>Signup</h2>
+                <p class="hint-text">Create your account. It's free and only takes a minute.</p>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col"><input type="text" class="form-control rounded" name="first_name"
+                                                placeholder="First Name" required="required"></div>
+                        <div class="col"><input type="text" class="form-control rounded" name="last_name"
+                                                placeholder="Last Name" required="required"></div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control rounded" name="email" placeholder="Email" required="required">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control rounded" name="password" placeholder="Password"
+                           required="required">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control rounded" name="confirm_password" placeholder="Confirm Password"
+                           required="required">
+                </div>
+                <div class="form-group">
+                    <label class="form-check-label rounded"><input type="checkbox" required="required"> I accept the <a
+                            href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+                </div>
+                <div class="form-group rounded">
+                    <button type="submit" class="btn btn-primary btn-lg">Register Now</button>
+                </div>
+                <div class="text-center rounded">Already have an account? <a href="{% url 'login' %}">Login</a></div>
+            </form>
+            <div class="col-md-6 d-none d-lg-block align-middle">
+                <br><br><br>
+                <h1 class="display-3 align-middle">Be A Member Of Our Community</h1>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

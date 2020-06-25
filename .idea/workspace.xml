@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="994a4074-ded5-4193-a49f-41ec568512af" name="Default Changelist" comment="fix the search button">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homepage/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homepage/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/profile_page/urls.py" afterDir="false" />
+    <list default="true" id="994a4074-ded5-4193-a49f-41ec568512af" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/profile_page/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profile_page/templates/signup_page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/partials/_alerts.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Jonuon.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Jonuon.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homepage/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/homepage/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homepage/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/homepage/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jonuon/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/jonuon/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jonuon/static/img/627.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/jonuon/static/img/627.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jonuon/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/jonuon/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/materialsearch/templates/all_courses.html" beforeDir="false" afterPath="$PROJECT_DIR$/materialsearch/templates/all_courses.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/materialsearch/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/materialsearch/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/2_627.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/teachers/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/teachers/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/_nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_nav.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile_page/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/profile_page/templates/login_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile_page/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/profile_page/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile_page/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/profile_page/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/_css.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/partials/_css.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/_footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/partials/_footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/_js.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/partials/_js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/_nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/partials/_nav.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/bass.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bass.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,15 +64,16 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\programing\Jonuon\genius" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\programing\Jonuon\templates\partials" />
       <recent name="G:\programing\Jonuon\profile_page\templates" />
       <recent name="G:\programing\Jonuon\jonuon\static" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\programing\Jonuon\genius" />
     </key>
   </component>
   <component name="RunManager">
@@ -138,7 +140,13 @@
       <workItem from="1592832545531" duration="2313000" />
       <workItem from="1592849826043" duration="1894000" />
       <workItem from="1592854208921" duration="629000" />
-      <workItem from="1592909621323" duration="4419000" />
+      <workItem from="1592909621323" duration="5279000" />
+      <workItem from="1592926198762" duration="635000" />
+      <workItem from="1592995344265" duration="69000" />
+      <workItem from="1593022540070" duration="11068000" />
+      <workItem from="1593036036041" duration="54000" />
+      <workItem from="1593081616787" duration="49000" />
+      <workItem from="1593107787456" duration="13658000" />
     </task>
     <task id="LOCAL-00001" summary="v0.5">
       <created>1592237365570</created>
@@ -175,7 +183,21 @@
       <option name="project" value="LOCAL" />
       <updated>1592395702244</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix the navbar links and add login page">
+      <created>1592917279570</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1592917279570</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fix the navbar links and add login page">
+      <created>1592917292441</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1592917292441</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,7 +207,8 @@
     <MESSAGE value="v0.5" />
     <MESSAGE value="material search done" />
     <MESSAGE value="fix the search button" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix the search button" />
+    <MESSAGE value="fix the navbar links and add login page" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix the navbar links and add login page" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591971093743">
@@ -196,14 +219,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="363" y="101" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1592391763084" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1592833389928">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1592917290881">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1592833389928" />
-    <state x="767" y="87" key="FileChooserDialogImpl" timestamp="1592516227615">
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1592917290881" />
+    <state x="767" y="87" key="FileChooserDialogImpl" timestamp="1592995411097">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="767" y="87" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1592516227615" />
+    <state x="767" y="87" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1592995411097" />
     <state width="1323" height="188" key="GridCell.Tab.0.bottom" timestamp="1592911398359">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -220,10 +243,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="188" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592911398359" />
-    <state x="219" y="15" key="SettingsEditor" timestamp="1591808723054">
+    <state x="219" y="15" key="SettingsEditor" timestamp="1593030133841">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="219" y="15" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1591808723054" />
+    <state x="219" y="15" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1593030133841" />
     <state x="438" y="209" key="cloudConfig.PluginsDialog" timestamp="1592255330505">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -236,10 +259,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1592516177640" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1592850191626">
+    <state x="92" y="92" width="1182" height="544" key="dock-window-1" timestamp="1593028665858">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1592850191626" />
+    <state x="92" y="92" width="1182" height="544" key="dock-window-1/0.0.1366.728@0.0.1366.728" timestamp="1593028665858" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1593023515609">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1593023515609" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Jonuon$tests.coverage" NAME="tests Coverage Results" MODIFIED="1592911162912" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courses" />
