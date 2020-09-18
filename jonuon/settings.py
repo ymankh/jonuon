@@ -25,7 +25,7 @@ SECRET_KEY = 'f#d8&^_&_nk#dw66=45k-l==9p&@%xxc@7_euqf1m8%!hq0$w0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["jonuon.azurewebsites.net"]
+ALLOWED_HOSTS = [ 'jonuon.azurewebsites.net',]
 
 # Application definition
 
