@@ -23,15 +23,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'f#d8&^_&_nk#dw66=45k-l==9p&@%xxc@7_euqf1m8%!hq0$w0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = [ 'jonuon.azurewebsites.net',]
+ALLOWED_HOSTS = [ 'jonuon.azurewebsites.net','jonuon1.azurewebsites.net',]
 
 # Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
-    'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
